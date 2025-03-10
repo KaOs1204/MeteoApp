@@ -1,7 +1,7 @@
 /* General Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #dfe9f3, #ffffff);
+    background: radial-gradient(circle at 10% 20%, rgb(67, 144, 233) 0%, rgb(78, 226, 198) 90.1%);
     color: #333;
     text-align: center;
     margin: 0;
@@ -11,7 +11,7 @@ body {
   .weather-app {
     max-width: 600px;
     margin: 50px auto;
-    background: #f8f9fa;
+    background: radial-gradient(343px at 46.3% 47.5%, rgb(242, 242, 242) 0%, rgb(241, 241, 241) 72.9%);
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -73,8 +73,8 @@ body {
   }
   
   
-/* Forecast Section */
 
+/* Forecast Section */
 .weather-app-forecast-container {
   background: white;
   padding: 30px;
@@ -91,9 +91,9 @@ body {
   display: flex;
   justify-content: space-between; /* Space out evenly */
   align-items: center;
-  flex-wrap: wrap; /* Wrap if needed */
+  flex-wrap: nowrap; /* Don't allow wrapping */
   gap: 25px;
-
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
 }
 
 /* Individual day styling */
@@ -105,59 +105,28 @@ body {
   gap: 5px;
   padding: 10px;
   border-radius: 12px;
-  margin-top: 40px;
-  min-width: 80px;
+  min-width: 120px; /* Increased minimum width to allow enough space for content */
   text-align: center;
   background: rgba(255, 255, 255, 0.8); /* Slight transparency */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05); /* Softer shadow */
 }
 
-/* Styling for date */
-.weather-app-forecast-date {
-  font-weight: bold;
-  font-size: 14px;
-  color: #0077b6; /* Stylish blue */
-}
-
-/* Weather icon styling */
-.weather-app-forecast-icon {
-  font-size: 28px;
-}
-
-/* Temperature styling */
-.weather-app-forecast-temperature {
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-  font-size: 14px;
-}
-
-.weather-app-forecast-max {
-  font-weight: bold;
-  color: #0077b6;
-}
-
-.weather-app-forecast-min {
-  color: #555;
-}
-
-/* Ensure responsiveness */
+/* Ensure responsiveness for small screens */
 @media (max-width: 600px) {
   .weather-app-forecast {
-      flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
   }
 
   .weather-app-forecast-day {
-      width: calc(100% / 3 - 10px); /* Show 3 days per row on small screens */
+    width: calc(100% / 3 - 10px); /* Show 3 days per row on small screens */
   }
 }
 
 @media (max-width: 400px) {
   .weather-app-forecast-day {
-      width: calc(100% / 2 - 10px); /* Show 2 days per row on very small screens */
+    width: calc(100% / 2 - 10px); /* Show 2 days per row on very small screens */
   }
 }
-
   
   /* Animated Icon */
   @keyframes rotate {
