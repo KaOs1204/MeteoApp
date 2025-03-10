@@ -76,86 +76,86 @@ body {
 /* Forecast Section */
 
 .weather-app-forecast-container {
-    background: white;
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Fancy shadow */
-    margin-top: 20px;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Fancy shadow */
+  margin-top: 20px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Arrange forecast days in a row inside the box */
 .weather-app-forecast {
-    display: flex;
-    justify-content: space-between; /* Space out evenly */
-    align-items: center;
-    flex-wrap: wrap; /* Wrap if needed */
-    gap: 25px;
+  display: flex;
+  justify-content: space-between; /* Space out evenly */
+  align-items: center;
+  flex-wrap: wrap; /* Wrap if needed */
+  gap: 25px;
 
 }
 
 /* Individual day styling */
 .weather-app-forecast-day {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    padding: 10px;
-    border-radius: 12px;
-    margin-top: 40px;
-    min-width: 80px;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.8); /* Slight transparency */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05); /* Softer shadow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+  border-radius: 12px;
+  margin-top: 40px;
+  min-width: 80px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8); /* Slight transparency */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05); /* Softer shadow */
 }
 
 /* Styling for date */
 .weather-app-forecast-date {
-    font-weight: bold;
-    font-size: 14px;
-    color: #0077b6; /* Stylish blue */
+  font-weight: bold;
+  font-size: 14px;
+  color: #0077b6; /* Stylish blue */
 }
 
 /* Weather icon styling */
 .weather-app-forecast-icon {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 /* Temperature styling */
 .weather-app-forecast-temperature {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    font-size: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-size: 14px;
 }
 
 .weather-app-forecast-max {
-    font-weight: bold;
-    color: #0077b6;
+  font-weight: bold;
+  color: #0077b6;
 }
 
 .weather-app-forecast-min {
-    color: #555;
+  color: #555;
 }
 
 /* Ensure responsiveness */
 @media (max-width: 600px) {
-    .weather-app-forecast {
-        flex-wrap: wrap;
-    }
+  .weather-app-forecast {
+      flex-wrap: wrap;
+  }
 
-    .weather-app-forecast-day {
-        width: calc(100% / 3 - 10px); /* Show 3 days per row on small screens */
-    }
+  .weather-app-forecast-day {
+      width: calc(100% / 3 - 10px); /* Show 3 days per row on small screens */
+  }
 }
 
 @media (max-width: 400px) {
-    .weather-app-forecast-day {
-        width: calc(100% / 2 - 10px); /* Show 2 days per row on very small screens */
-    }
+  .weather-app-forecast-day {
+      width: calc(100% / 2 - 10px); /* Show 2 days per row on very small screens */
+  }
 }
 
   
